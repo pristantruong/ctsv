@@ -1,0 +1,138 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutTrangChu.cshtml";
+    
+}
+@section css{
+    <link href="~/Content/DangKy.css" rel="stylesheet" />    
+}
+@section scripts{
+    <script src="~/Content/DangKy.js"></script>
+}
+<div class="moduletable">
+    <h3>CẤP GIẤY XÁC NHẬN </h3>
+    <form id="contactform" name="contact" method="post" action="#">
+        @*<p class="note"><span class="req">(*):</span> Asterisk fields are required</p>*@
+        <div class="row">
+            <label for="email">MSSV <span class="req">(*):</span></label>
+            <input size="10" type="email" name="email" id="email" class="txt" tabindex="2" placeholder="VD: 1412345678" required>
+            <label for="name">Họ tên SV <span class="req">(*):</span></label>
+            <input type="text" name="name" id="name" class="txt" tabindex="1" placeholder="VD: Nguyễn Văn A" required>
+        </div>
+
+        <div class="row">
+            <label for="subject">Ngày sinh <span class="req">(*):</span></label>
+            <input type="date" name="" class="combobox" min="1970-01-01" max="2012-12-31" />
+            <label for="subject">Giới tính <span class="req">(*):</span></label>
+            <input type="radio" name="gender" value="female"> Nam    <input type="radio" name="gender" value="other"> Nữ
+        </div>
+
+        <div class="row">
+            <label for="subject">Nơi sinh <span class="req">(*):</span></label>
+            <input type="text" name="subject" id="subject" class="txt" tabindex="3" placeholder="VD: 14DTHO3" required>
+            <label for="subject">Địa chỉ TT<span class="req">(*):</span></label>
+            <input type="text" name="subject" id="subject" class="txt" tabindex="3" placeholder="VD: Bình Thạnh, TPHCM" required>
+        </div>
+        <div class="row">
+            <label for="subject">Số CMND <span class="req">(*):</span></label>
+            <input type="text" name="subject" id="subject" class="txt" tabindex="3" placeholder="VD: 341851257" required>
+            <label for="subject">Ngày cấp <span class="req">(*):</span></label>
+            <input type="date" name="" class="combobox" min="1970-01-01" max="2012-12-31" />
+            </div>
+
+        <div class="row">
+            <label for="subject">Nơi cấp <span class="req">(*):</span></label>
+            <input type="text" name="subject" id="subject" class="txt" tabindex="3" placeholder="VD: TPHCM" required>
+            <label for="subject">Điện thoại <span class="req">(*):</span></label>
+            <input type="text" name="subject" id="subject" class="txt" tabindex="3" placeholder="VD: 0981234567" required>
+        </div>
+        <div class="row">
+           
+            <label for="email">Email <span class="req">(*):</span></label>
+            <input type="email" name="email" id="email" class="txt" tabindex="2" placeholder="VD: hutech@gmail.com" required>
+        </div>
+
+
+        <div class="row">
+            <label for="subject">Khoa <span class="req">(*):</span></label>
+            <input type="text" class="combobox" list="Khoa">
+            <datalist id=Khoa>
+                <option> Công nghệ thông tin
+                <option> Quản trị kinh doanh
+            </datalist>
+            <label for="subject">Ngành <span class="req">(*):</span></label>
+            <input type="text" class="combobox" list="Nganh">
+            <datalist id=Nganh>
+                <option> Công nghệ thông tin
+                <option> Quản trị kinh doanh
+            </datalist>
+        </div>
+        <div class="row">
+            <label for="message">Khóa <span class="req">(*):</span></label>
+            <input width="80" type="number" name="svnam" id="subject" class="number1" tabindex="5" min="2000" max="2027" >
+               -
+            <input  width="52" type="number" name="svnam" id="subject" class="number1" tabindex="5" min="2007" max="2027">
+            <label for="subject" >Lớp <span class="req">(*):</span></label>
+            <input type="text" name="subject" id="subject" class="txt" tabindex="3" placeholder="VD: 14DTH03" required>
+        </div>
+        <div class="row">
+            <label for="subject">Loại hình <span class="req">(*):</span></label>
+            <input type="text" class="combobox" list="Nganh">
+            <datalist id=Nganh>
+                <option> Công nghệ thông tin
+                <option> Quản trị kinh doanh
+            </datalist>
+            <label for="message">Năm thứ <span class="req">(*):</span></label>
+            <input type="number" name="svnam" id="subject" class="number" tabindex="5" min="1" max="5">
+        </div>
+        <h4>Xin cấp giấy xác nhận</h4>
+        <div class="row">
+            <div>
+                <input type="checkbox" name="subject" id="subject" tabindex="3" placeholder="VD: Đại học chính quy" required>
+                Hoãn nghĩa vụ quân sự<span class="req"></span>
+            </div>
+            <div>
+                <input type="checkbox" name="subject" id="subject" tabindex="3" placeholder="VD: Đại học chính quy" required>
+                Vay vốn ngân hàng CSXH<span class="req"></span> (Vay vốn lần thứ <input name="vayvon" class="vayvon" type="number" min="1" max="5" />)
+            </div>
+            <div>
+                <input type="checkbox" name="subject" id="subject" tabindex="3" placeholder="VD: Đại học chính quy" required>
+                Nghị định 86<span class="req"></span>
+            </div>
+            <div>
+                <input type="checkbox" name="subject" id="subject" tabindex="3" placeholder="VD: Đại học chính quy" required>
+                Thông tư 36<span class="req"></span>
+            </div>
+            <div>
+                <input type="checkbox" name="subject" id="subject" tabindex="3" placeholder="VD: Đại học chính quy" required>
+                Giảm trừ thuế TNCN<span class="req"></span>
+            </div>
+            <div>
+                <input type="checkbox" name="subject" id="subject" tabindex="3" placeholder="VD: Đại học chính quy" required>
+                Bổ sung hồ sơ<span class="req"></span>
+            </div>
+            <div>
+            <input type="checkbox" name="subject" id="subject" tabindex="3" placeholder="VD: Đại học chính quy" required>
+            Nợ môn học<span class="req"></span>
+            </div>
+            <div>
+            <input type="checkbox" name="subject" id="subject" tabindex="3" placeholder="VD: Đại học chính quy" required>
+            Khác:<span class="req"></span>
+            <input type="email" name="email" id="email" class="txt" tabindex="2" placeholder="" required>
+            </div>
+</div>
+
+
+
+        @*<div class="row">
+            <label for="message">Loại hình đào tạo <span class="req">(*):</span></label>
+            <textarea name="message" id="message" class="txtarea" tabindex="4" required></textarea>
+        </div>*@
+
+
+        <div class="center">
+            <input type="submit" id="submitbtn" name="submitbtn" tabindex="6" value="Đăng ký">
+        </div>
+    </form>
+</div>

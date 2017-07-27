@@ -1,0 +1,853 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @RenderSection("css", false)
+
+</head>
+<body>
+    <div>
+
+        <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="vi-vn" lang="vi-vn" class="sb-init">
+        <head profile="http://www.w3.org/1999/xhtml/vocab">
+            @*<style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>*@
+
+            <meta name="robots" content="index, follow">
+            <meta name="revisit-after" content="1 days">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+            <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+            <title>PHÒNG CÔNG TÁC SINH VIÊN HỌC SINH</title>
+            <meta name="keywords" content="dai hoc, dai hoc cong nghe, đại học, truong dai hoc, trường Đại Học,dai hoc chinh quy, dai hoc lien thong, đại học chính quy, tuyen sinh dai hoc, tuyển sinh đại học, dai hoc,dai hoc cong nghe,dai hoc,truong dai hoc,truong dai hoc,dai hoc chinh quy,dai hoc lien thong,dai hoc chinh quy,tuyen sinh dai hoc,tuyen sinh dai hoc">
+            <meta name="description" content="Trường Đại học uy tín chất lượng hàng đầu Việt Nam, đào tạo đa ngành nghề, đảm bảo thực tập, việc làm cho sinh viên theo học.">
+            <meta name="copyright" content="Trường Đại học Công nghệ TP.HCM - HUTECH">
+            <meta name="author" content="Trường Đại học Công nghệ TP.HCM - HUTECH">
+            <meta http-equiv="audience" content="General">
+            <meta name="resource-type" content="Document">
+            <meta name="distribution" content="Global">
+            <meta name="GENERATOR" content="Trường Đại học Công nghệ TP.HCM - HUTECH">
+            <link rel="publisher" href="https://plus.google.com/+hutech/posts">
+            <link rel="author" href="https://plus.google.com/+hutech/posts">
+            <meta property="og:site_name" content="hutech.edu.vn">
+            <meta property="og:type" content="website">
+            <meta property="og:locale" content="vi_VN">
+            <link rel="shortcut icon" href="https://www.hutech.edu.vn/favicon.ico" type="image/x-icon">
+
+            <script src="~/Content/DangKy.js"></script>
+
+            <script async="true" type="text/javascript" src="//media1.admicro.vn/cpa/core/tp2_core.min.js"></script>
+            <script async="true" type="text/javascript" src="//media1.admicro.vn/cpa/tp2.js" data-owner="admicro-tag"></script>
+            <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+            <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+            <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+            <script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.vi.d0LUgdwWdg8.O/m=auth/exm=plusone/rt=j/sv=1/d=1/ed=1/am=EQ/rs=AGLTcCPCL1BShignMZ1spDPvPmePPdAdhQ/t=zcms/cb=gapi.loaded_1" async=""></script>
+            <script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-NPQLMC"></script>
+            <script id="facebook-jssdk" src="https://www.hutech.edu.vn/external.php?__url=http://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.0"></script>
+            <script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.vi.d0LUgdwWdg8.O/m=plusone/rt=j/sv=1/d=1/ed=1/am=EQ/rs=AGLTcCPCL1BShignMZ1spDPvPmePPdAdhQ/t=zcms/cb=gapi.loaded_0" async=""></script>
+            <script src="https://connect.facebook.net/signals/config/662238160536354?v=2.7.18" async=""></script>
+            <script src="https://connect.facebook.net/signals/config/375080202826501?v=2.7.18" async=""></script>
+            <script async="" src="//connect.facebook.net/en_US/fbevents.js"></script>
+            <script async="" src="//www.google-analytics.com/analytics.js"></script>
+            <script type="text/javascript" src="//www.hutech.edu.vn/khaosat/js/angular.min.js"></script>
+            <script type="text/javascript" src="//www.hutech.edu.vn/khaosat/js/ui-mask.js"></script>
+            <script src="//www.hutech.edu.vn/khaosat/js/ui-bootstrap-tpls-1.3.3.js"></script>
+
+            <!--[if IE]>
+            <link rel="stylesheet" type="text/css" href="https://www.hutech.edu.vn/css/ie.css" type="text/css" />
+            <script type="text/javascript" src="https://www.hutech.edu.vn/js/menu/cssmenu.js"></script>
+            <![endif]-->
+
+            <link rel="stylesheet" type="text/css" href="https://www.hutech.edu.vn/minify/site/default/0.2.4.css">
+
+
+
+
+
+
+            <!--[ if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> </script>
+            <[endif] -->
+
+            <script type="text/javascript">
+            var url_root = "https://www.hutech.edu.vn/", url_img, url_static;
+            var token = "28c7f98dd2ecbca68afb7f22ed10536b";
+            url_img = "https://www.hutech.edu.vn/s-img/";
+            url_static = "https://www.hutech.edu.vn/";
+            </script>
+            <script type="text/javascript" src="https://www.hutech.edu.vn/minify/site/default/home/Index/0.2.6.js"></script>
+
+
+
+
+
+
+            <script>
+            (function (i, s, o, g, r, a, m) {
+              i['GoogleAnalyticsObject'] = r;
+              i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+              }, i[r].l = 1 * new Date();
+              a = s.createElement(o),
+                      m = s.getElementsByTagName(o)[0];
+              a.async = 1;
+              a.src = g;
+              m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-37324204-1', 'auto');
+            ga('send', 'pageview');
+
+            </script>
+
+
+
+
+
+            <!-- Facebook Pixel Code -->
+            <script>
+                !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+                n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+                document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+                fbq('init', '662238160536354');
+                fbq('track', 'PageView');
+            </script>
+            <noscript>
+                &lt;img height="1" width="1" style="display:none"
+                src="http://www.facebook.com/tr?id=662238160536354&amp;ev=PageView&amp;noscript=1"
+                /&gt;
+            </noscript>
+            <!-- End Facebook Pixel Code -->
+
+
+
+            <script type="text/javascript" async="" src="//media1.admicro.vn/core/adm_tracking.js"></script>
+            <style type="text/css">
+                .fb_iframe_widget {
+                    display: inline-block;
+                    position: relative;
+                }
+
+                    .fb_iframe_widget span {
+                        display: inline-block;
+                        position: relative;
+                        text-align: justify;
+                    }
+
+                    .fb_iframe_widget iframe {
+                        position: absolute;
+                    }
+
+                .fb_iframe_widget_fluid_desktop, .fb_iframe_widget_fluid_desktop span, .fb_iframe_widget_fluid_desktop iframe {
+                    max-width: 100%;
+                }
+
+                    .fb_iframe_widget_fluid_desktop iframe {
+                        min-width: 220px;
+                        position: relative;
+                    }
+
+                .fb_iframe_widget_lift {
+                    z-index: 1;
+                }
+
+                .fb_hide_iframes iframe {
+                    position: relative;
+                    left: -10000px;
+                }
+
+                .fb_iframe_widget_loader {
+                    position: relative;
+                    display: inline-block;
+                }
+
+                .fb_iframe_widget_fluid {
+                    display: inline;
+                }
+
+                    .fb_iframe_widget_fluid span {
+                        width: 100%;
+                    }
+
+                .fb_iframe_widget_loader iframe {
+                    min-height: 32px;
+                    z-index: 2;
+                    zoom: 1;
+                }
+
+                .fb_iframe_widget_loader .FB_Loader {
+                    background: url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;
+                    height: 32px;
+                    width: 32px;
+                    margin-left: -16px;
+                    position: absolute;
+                    left: 50%;
+                    z-index: 4;
+                }
+            </style>
+        </head>
+        <body id="bd" class="bd fs4 com_content">
+
+            <script type="text/javascript" src="https://www.hutech.edu.vn/libs/menu/ddaccordion.js"></script>
+
+            <div id="sb-site">
+                <!-- Template Start: site/common/WrapHeader -->
+                <div id="ja-header" class="wrap ">
+                    <div class="main">
+                        <div class="main-inner1 clearfix">
+                            <div id="bannerphongctsv">
+                                <div class="search">
+                                    <span id="group" style="display:none;">phongctsv</span>
+                                    <input type="text" name="searchword" id="qtukhoa1" maxlength="20" class="inputbox search-query" size="20" value="Tìm kiếm" onblur="if (this.value=='') this.value='Tìm kiếm ';" onfocus="if (this.value=='Tìm kiếm ') this.value='';">
+                                    <button class="button btn btn-primary" onclick="check_search()">Tìm kiếm</button>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="header-mobile">
+
+                    <div id="languagebottomts">
+                        <p>
+                            <a href="http://lib.hutech.edu.vn/" target="_blank" id="topmenu1-m">Thư Viện</a>
+                            <a href="#" id="topmenu2-m">| Liên hệ</a>
+                        </p>
+                    </div>
+
+                    <div class="jsn-text-left" id="jsn-logo">
+                        <a title="" href="https://www.hutech.edu.vn/"><img id="logohutech" alt="" src="/images/logomobile.png"></a>
+                        <div id="textsite1">PHÒNG CÔNG TÁC SINH VIÊN HỌC SINH</div>
+                    </div>
+                </div>
+                <div style="width: 100%;" id="menumobile">
+                    <div id="menungang">
+                        <div class="sb-open-right" style="width:100%;line-height: 22px;height:22px;font-size:13px;background:url(/images/icon/burger.png) no-repeat scroll 98% 2px #3d9bda" id="openmenu">Danh mục</div>
+                        <div class="sb-open-right2" style="width:100%;line-height: 22px;height:22px;font-size:13px;display:none;background:url(/images/icon/burger.png) no-repeat scroll 98% 2px #3d9bda" id="closemenu">Danh mục</div>
+                    </div>
+                </div>
+                <!-- Template End: site/common/WrapHeader -->
+
+
+                <div id="ja-mainnav" class="wrap">
+                    <div class="main">
+                        <div class="main-inner1 clearfix">
+                            <ul class="table autoLayout absSubMenus" id="ja-cssmenu">
+                                <!-- Template Start: site/phongctsv/WrapMenu -->
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv"><span class="menu-title">Trang chủ</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/phongctsv"><span class="menu-title">Trang Chủ PHÒNG</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/"><span class="menu-title">Trang Chủ HUTECH</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv/gioi-thieu/chuc-nang-nhiem-vu"><span class="menu-title">Giới Thiệu</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="menu-title">Rèn luyện</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="http://tuyensinh.hutech.edu.vn/xemdiem/ctsv/DiemRenLuyen.aspx" target="_blank"><span class="menu-title">Kết quả Rèn luyện</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/phongctsv/kt-qu-ren-luyn/quy-trinh-danh-gia-ren-luyen"><span class="menu-title">Quy trình đánh giá điểm rèn luyện</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="menu-title">Hoạt động</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/phongctsv/hoat-dong/sinh-hoat-cong-dan-svhs"><span class="menu-title">Sinh hoạt Công dân SVHS</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/phongctsv/hoat-dong/hoat-dong-sinh-vien"><span class="menu-title">Hoạt động sinh viên</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/phongctsv/hoat-dong/chuong-trinh-phat-thanh-hutech"><span class="menu-title">Chương trình phát thanh HUTECH</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="menu-title">Văn bản</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/phongctsv/van-ban/quy-ch"><span class="menu-title">Quy định, Quy Chế</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/phongctsv/van-ban/thong-bao"><span class="menu-title">Thông báo</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/phongctsv/van-ban/quyet-dinh"><span class="menu-title">Quyết định</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/phongctsv/van-ban/bieu-mau"><span class="menu-title">Biểu mẫu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="menu-title">Hỗ trợ HSSV</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="http://www.hutech.edu.vn/qhdn/"><span class="menu-title">Việc làm</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/phongctsv/ho-tro-hssv/nha-tro"><span class="menu-title">Nhà trọ</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/phongctsv/ho-tro-hssv/hoc-bong"><span class="menu-title">Học bổng</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/phongctsv/ho-tro-hssv/ky-nang"><span class="menu-title">Kỹ năng</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/phongctsv/ho-tro-hssv/y-te-hoc-duong"><span class="menu-title">Y tế học đường</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/phongctsv/van-ban/che-do-chinh-sach"><span class="menu-title">Chế độ Chính sách</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/doinhom"><span class="menu-title">CLB - Đội - Nhóm</span></a>
+
+                                </li>
+                                <li>
+                                    <a href="#"><span class="menu-title">Thi đua</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/phongctsv/thi-dua/sinh-vien-tieu-bieu"><span class="menu-title">Sinh viên tiêu biểu</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/phongctsv/thi-dua/khen-thuong"><span class="menu-title">Khen thưởng</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/phongctsv/thi-dua/ky-luat"><span class="menu-title">Kỷ luật</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="topmenu2">
+                                    <a href="#"><span class="menu-title">Hình ảnh</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/phongctsv/hinh-anh/hoat-dong-ngoai-khoa"><span class="menu-title">Hoạt động ngoại khóa</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.hutech.edu.vn/phongctsv/hinh-anh/hinh-anh-tot-nghiep"><span class="menu-title">Hình ảnh Tốt nghiệp</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="topmenu1">
+                                    <a target="_blank" href="http://hutech.edu.vn/contact/"><span class="menu-title">Liên hệ</span></a>
+                                </li>
+
+                                <!-- Template End: site/phongctsv/WrapMenu -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Template Start: site/common/WrapBanner -->
+
+                <link href="https://www.hutech.edu.vn/libs/slider/style.css" rel="stylesheet" type="text/css">
+                <!--LARGE BANNER-->
+                <div id="wowslider-container1" class="ws_gestures" style="font-size: 10px;">
+                    <div class="ws_images" style="overflow: visible;">
+                        @*<div style="position: relative; width: 100%; font-size: 0px; line-height: 0; max-height: 100%; overflow: hidden;"><img src="https://www.hutech.edu.vn/img/slider/1-1487660986.jpg" alt="" class="wows1_1" style="width: 100%; visibility: hidden;"></div>*@
+
+                        <div style="position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; overflow: hidden;">
+                            <div class="ws_list" style="position: absolute; top: 0px; height: 100%; transform: translate3d(0px, 0px, 0px); width: 1000%; left: -100%;">
+                                <div class="ws_swipe_left" style="position: absolute; top: 0px; height: 100%; overflow: hidden; width: 10%; left: -10%;"><img src="https://www.hutech.edu.vn/img/slider/banner_vothuat-1436413624.jpg" alt="" class="wows1_5" style="visibility: visible;"></div><ul style="width: 100%;">
+                                    <li style="width: 10%;">
+                                        <a href="http://misshutech.vn/">
+                                            <img src="https://www.hutech.edu.vn/img/slider/1-1487660986.jpg" alt="" class="wows1_1" style="visibility: visible;">
+                                        </a>
+                                    </li>
+                                    <li style="width: 10%;">
+                                        <a href="#">
+                                            <img src="https://www.hutech.edu.vn/img/slider/banner_hoc_phi-1480556238.jpg" alt="" class="wows1_1" style="visibility: visible;">
+                                        </a>
+                                    </li>
+                                    <li style="width: 10%;">
+                                        <a href="#">
+                                            <img src="https://www.hutech.edu.vn/img/slider/banner_hoc_vu-1480556249.jpg" alt="" class="wows1_2" style="visibility: visible;">
+                                        </a>
+                                    </li>
+                                    <li style="width: 10%;">
+                                        <a href="#">
+                                            <img src="https://www.hutech.edu.vn/img/slider/banner_tdtt-1436413595.jpg" alt="" class="wows1_3" style="visibility: visible;">
+                                        </a>
+                                    </li>
+                                    <li style="width: 10%;">
+                                        <a href="#">
+                                            <img src="https://www.hutech.edu.vn/img/slider/banner_van_nghe_2-1436413611.jpg" alt="" class="wows1_4" style="visibility: visible;">
+                                        </a>
+                                    </li>
+                                    <li style="width: 10%;">
+                                        <a href="#">
+                                            <img src="https://www.hutech.edu.vn/img/slider/banner_vothuat-1436413624.jpg" alt="" class="wows1_5" style="visibility: visible;">
+                                        </a>
+                                    </li>
+
+                                </ul><div class="ws_swipe_right" style="position: absolute; top: 0px; height: 100%; overflow: hidden; width: 10%; left: 60%;"><img src="https://www.hutech.edu.vn/img/slider/1-1487660986.jpg" alt="" class="wows1_1" style="visibility: visible;"></div>
+                            </div>
+                        </div><div class="ws_cover" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 10; background: rgb(255, 255, 255); opacity: 0;"><a href="https://www.hutech.edu.vn/phongctsv#" style="display: block; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" target=""></a></div><div class="ws_effect ws_fade" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; max-height: none; max-width: none; transform: translate3d(0px, 0px, 0px); overflow: hidden; opacity: 1;"><img src="https://www.hutech.edu.vn/img/slider/banner_hoc_vu-1480556249.jpg" alt="" class="wows1_2" style="visibility: visible; position: absolute; left: 0px; top: 0px; width: 998px; height: 280px; max-height: none; max-width: none; transform: translate3d(0px, 0px, 0px); opacity: 0.3125;"><img src="https://www.hutech.edu.vn/img/slider/banner_hoc_phi-1480556238.jpg" alt="" class="wows1_1" style="visibility: visible; position: absolute; left: 0px; top: 0px; width: 998px; height: 280px; max-height: none; max-width: none; transform: translate3d(0px, 0px, 0px); opacity: 0.688;"></div><div style="position: absolute; padding: 0px; z-index: 56; right: 15px; bottom: 15px;"><a href="http://wowslider.com" style="position: relative; display: none; font-size: 15px; width: auto; height: auto; font-family: Arial; font-weight: normal; font-style: normal; padding: 1px 5px; margin: 0px; border-radius: 10px; outline: none;" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div><div class="ws_controls">
+                            <div class="ws_bullets">
+                                <div>
+
+
+                                </div>
+                            </div><a href="#" class="ws_next"><span><i></i><b></b></span></a><a href="#" class="ws_prev"><span><i></i><b></b></span></a>
+                        </div>
+                    </div>
+
+                    <div class="ws_shadow"></div>
+                </div>
+                <script type="text/javascript" src="https://www.hutech.edu.vn/libs/slider/wowslider.js"></script>
+                <script type="text/javascript" src="https://www.hutech.edu.vn/libs/slider/script.js"></script>
+
+
+                <!-- Template End: site/common/WrapBanner -->
+                <!-- MAIN CONTAINER -->
+                <div id="ja-container" class="wrap">
+                    <div class="main clearfix">
+                        <aside id="sticky-social">
+                            <ul>
+                                <li><a href="http://www.facebook.com/hutechuniversity/" class="zocial-facebook" target="_blank"><span>Facebook</span></a></li>
+                                <li><a href="http://www.instagram.com/hutechuniversity/" class="zocial-instagram" taget="_blank"><span>Instagram</span></a></li>
+                                <li><a href="http://hutechuni.blogspot.com/" class="zocial-blogger" target="_blank"><span>Blogspot</span></a></li>
+                                <li><a href="http://plus.google.com/u/3/+hutech" class="zocial-googleplus" target="_blank"><span>Google+</span></a></li>
+                                <li><a href="http://hutechuniversity.tumblr.com/" class="zocial-tumblr" target="_blank"><span>Tumblr</span></a></li>
+                                <li><a href="http://daihochutech.wordpress.com/" class="zocial-wordpress" target="_blank"><span>Wordpress</span></a></li>
+                                <li><a href="http://www.youtube.com/channel/UCOg9cfIS_KZidN4yP8M4wOQ" class="zocial-youtube" target="_blank"><span>Youtube</span></a></li>
+                                <li><a href="http://twitter.com/hutechvietnam" class="zocial-twitter" target="_blank"><span>Twitter</span></a></li>
+
+                            </ul>
+                        </aside>
+                        <div id="ja-right" class="column">
+
+                            <div class="ja-moduletable moduletable  clearfix">
+                                <!-- Template Start: site/common/WrapNotify -->
+                                <div class="title-right"> THÔNG TIN MỚI</div>
+
+                                <div class="conten-noibat">
+                                    <ul class="latestnews">
+                                        <li class="latestnews">
+                                            <a href="https://www.hutech.edu.vn/phongctsv/van-ban/thong-bao/14563576-thong-bao-234tb-ctsv-ve-viec-xet-va-trao-hoc-bong-cho-sinh-vien-ho-do-dau">
+                                                Thông báo 234/TB-CTSV về việc xét và trao học bổng cho sinh viên Họ ĐỖ (ĐẬU)
+                                            </a>
+                                        </li>
+                                        <li class="latestnews">
+                                            <a href="https://www.hutech.edu.vn/phongctsv/ho-tro-hssv/hoc-bong/14563578-thong-bao-234tb-ctsv-ve-viec-xet-va-trao-hoc-bong-cho-sinh-vien-ho-do-dau">
+                                                Thông báo 234/TB-CTSV về việc xét và trao học bổng cho sinh viên Họ ĐỖ (ĐẬU)
+                                            </a>
+                                        </li>
+                                        <li class="latestnews">
+                                            <a href="https://www.hutech.edu.vn/phongctsv/ho-tro-hssv/hoc-bong/14563559-thong-bao-231tb-ctsv-ve-viec-tiep-nhan-ho-so-hoc-bong-cua-ngan-hang-sacombank">
+                                                Thông báo 231/TB-CTSV về việc tiếp nhận hồ sơ học bổng của ngân hàng Sacombank
+                                            </a>
+                                        </li>
+                                        <li class="latestnews">
+                                            <a href="https://www.hutech.edu.vn/phongctsv/van-ban/thong-bao/14563558-thong-bao-231tb-ctsv-ve-viec-tiep-nhan-ho-so-hoc-bong-cua-ngan-hang-sacombank">
+                                                Thông báo 231/TB-CTSV về việc tiếp nhận hồ sơ học bổng của ngân hàng Sacombank
+                                            </a>
+                                        </li>
+                                        <li class="last">
+                                        </li>
+                                        <li class="last">
+                                            <div class="morenews"><a href="https://www.hutech.edu.vn/phongctsv/thong-bao-moi">Xem tiếp &gt;&gt;</a></div>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+
+
+
+                                <!-- Template End: site/common/WrapNotify -->
+                                <!-- Template Start: site/common/WrapGoogleface -->
+                                <div class="googleface">
+                                    <div style="float:left;">
+
+
+                                        <iframe width="1000px" height="1000px" frameborder="0" class="" src="https://www.facebook.com/v2.0/plugins/like.php?action=like&amp;app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2F1ldYU13brY_.js%3Fversion%3D41%23cb%3Df1d4658ce1a9846%26domain%3Dlocalhost%26origin%3Dhttp%253A%252F%252Flocalhost%252Ff1ce0b8604477f2%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fwww.facebook.com%2Fhutechuniversity&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false" style="border: medium none; visibility: visible; width: 86px; height: 20px;" title="fb:like Facebook Social Plugin" scrolling="no" allowfullscreen="true" allowtransparency="true" name="f19a79562f4e6"></iframe>
+                                    </div>
+                                    <div style="float:right;width:80px;overflow:hidden;">
+
+                                        <script type="text/javascript" src="https://www.hutech.edu.vn/libs/google/plusone.js" gapi_processed="true"></script>
+                                        <div id="___plusone_0" style="position: absolute; width: 450px; left: -10000px;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position:absolute;top:-10000px;width:450px;margin:0px;border-style:none" tabindex="0" vspace="0" width="100%" id="I0_1501054304115" name="I0_1501054304115" src="https://apis.google.com/se/0/_/+1/fastbutton?usegapi=1&amp;size=medium&amp;origin=https%3A%2F%2Fwww.hutech.edu.vn&amp;url=https%3A%2F%2Fwww.hutech.edu.vn%2Fphongctsv&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.vi.d0LUgdwWdg8.O%2Fm%3D__features__%2Fam%3DEQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAGLTcCPCL1BShignMZ1spDPvPmePPdAdhQ#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&amp;id=I0_1501054304115&amp;parent=https%3A%2F%2Fwww.hutech.edu.vn&amp;pfname=&amp;rpctoken=40796701"></iframe></div><g:plusone size="medium" data-gapiscan="true" data-onload="true" data-gapistub="true"></g:plusone>
+                                    </div>
+                                </div>
+
+                                <!-- Template End: site/common/WrapGoogleface -->
+                                <!-- Template Start: site/phongctsv/WrapQuickReference -->
+                                <div class="ja-box-ct">
+
+                                    <div id="tsmaucam">
+                                        <a href="http://www.hutech.edu.vn/phongctsv/tin-tuc/tin-t-c-s-ki-n/697-hoi-dong-quan-tri-dang-uy-va-ban-giam-hieu-nha-truong-ban-hanh-nghi-quyet-lien-tich-nam-sinh-vien-hutech">
+                                            <span class="top" style="display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NGHỊ QUYẾT NĂM SINH VIÊN</span>
+                                        </a>
+                                    </div>
+
+                                    <div id="tsxanhlacay">
+                                        <a href="http://tuyensinh.hutech.edu.vn/xemdiem/ctsv/DiemRenLuyen.aspx" target="_blank">
+                                            <span class="top" style="display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KẾT QUẢ RÈN LUYỆN</span>
+                                        </a>
+                                    </div>
+
+                                    <div id="tsxanhduong">
+                                        <a href="http://www.hutech.edu.vn/phongctsv/hinh-anh/hoat-dong-ngoai-khoa/1023-hai-thao-chang-tham-trong-xay-dang">
+                                            <span class="top" style="display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THƯ VIỆN ẢNH</span>
+                                        </a>
+                                    </div>
+
+
+                                    <div id="tsmaudo">
+                                        <a href="http://www.hutech.edu.vn/phongctsv/hinh-anh/hinh-anh-tot-nghiep">
+                                            <span class="top" style="display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ẢNH TỐT NGHIỆP</span>
+                                        </a>
+                                    </div>
+
+
+                                    <div id="tsmautim">
+                                        <a href="http://www.hutech.edu.vn/phongctsv/van-ban/bieu-mau">
+                                            <span class="top" style="display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VĂN BẢN</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="video">
+
+                                    <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://staticxx.facebook.com/connect/xd_arbiter/r/ao6eUeuGXQq.js?version=42#channel=f1c2707138ca4f8&amp;origin=https%3A%2F%2Fwww.hutech.edu.vn" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+                                    <script>
+(function (d, s, id) {
+
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if(d.getElementById(id))
+                  return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://www.hutech.edu.vn/external.php?__url=http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+                fjs.parentNode.insertBefore(js, fjs);
+
+              }(document, 'script', 'facebook-jssdk'));</script>
+
+                                    <div class="fb-like-box fb_iframe_widget" data-href="https://www.facebook.com/hutechuniversity" data-width="90%" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;color_scheme=light&amp;container_width=256&amp;header=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fhutechuniversity&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false&amp;width=90%25"><span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;"><iframe name="f5e3542f84aae" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/v2.0/plugins/like_box.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2Fao6eUeuGXQq.js%3Fversion%3D42%23cb%3Df25cfab18769a54%26domain%3Dwww.hutech.edu.vn%26origin%3Dhttps%253A%252F%252Fwww.hutech.edu.vn%252Ff1c2707138ca4f8%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=256&amp;header=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fhutechuniversity&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false&amp;width=90%25" style="border: none; visibility: visible; width: 0px; height: 0px;"></iframe></span></div>
+                                    <p></p>
+                                </div>
+                                <!-- Template End: site/phongctsv/WrapQuickReference -->
+
+
+
+
+                            </div>
+
+                        </div>
+                        <!-- CONTENT -->
+                        @RenderBody()
+                        <!-- //CONTENT -->
+                        <!-- RIGHT COLUMN-->
+                        @**@
+                        <!-- //RIGHT COLUMN-->
+                    </div>
+                </div>
+                <!-- //MAIN CONTAINER -->
+                <!-- Template Start: site/common/WrapLienKet -->
+                <!-- WRAP -->
+
+                <div id="ja-botsl" class="wrap ">
+                    <div class="main clearfix">
+                        <ul class="lienket">
+                            <li>
+                                <a href="http://www.lincolnuca.edu/" target="_blank">
+                                    <img class="icon_lienket_oum" src="//www.hutech.edu.vn/images/img_blank.gif">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.oum.edu.my/" target="_blank">
+                                    <img class="icon_lienket_lincolnuca" src="//www.hutech.edu.vn/images/img_blank.gif">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.u-cergy.fr/en/index.html" target="_blank">
+                                    <img class="icon_lienket_marie" src="//www.hutech.edu.vn/images/img_blank.gif">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.avans.nl/international" target="_blank">
+                                    <img class="icon_lienket_viauc" src="//www.hutech.edu.vn/images/img_blank.gif">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.bu.ac.th/eng/" target="_blank">
+                                    <img class="icon_lienket_hutech" src="//www.hutech.edu.vn/images/img_blank.gif">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.eadania.dk/en" target="_blank">
+                                    <img class="icon_lienket_6" src="//www.hutech.edu.vn/images/img_blank.gif">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://en.via.dk/" target="_blank">
+                                    <img class="icon_lienket_7" src="//www.hutech.edu.vn/images/img_blank.gif">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //WRAP -->
+                <!-- Template End: site/common/WrapLienKet -->
+                <!-- FOOTER -->
+                <div id="ja-botsl2" class="wrap ">
+                    <div class="main clearfix">
+                        <div class="box-footer">
+
+                            <!-- Template Start: site/phongctsv/WrapFooter -->
+                            <div class="box-footer-1">
+                                <b>PHÒNG CÔNG TÁC SINH VIÊN - HUTECH</b>
+                                <span id="coso">
+                                    <br>475A, Điện Biên Phủ, P.25, Q.Bình Thạnh, TP.HCM
+                                </span>
+                            </div>
+
+                            <div class="box-footer-2">
+                                <span style="display: block;" id="phone">ĐT: 028. 35120.785 - 028.35120.254 </span>
+                                <span style="display: block;" id="emailtruong">Email: congtacsinhvien@hutech.edu.vn</span>
+                            </div>
+
+                            <div class="box-footer-3">
+                                <a href="#">Trang Chủ</a> | <a href="#">Sơ Đồ</a> | <a href="#">Liên Hệ</a>
+                                <br>
+                                Bản quyền <span style="font-size: small;"><a href="http://www.hutech.edu.vn/admin"><strong>©</strong></a></span> 2015 <a href="https://plus.google.com/u/0/+hutech" rel="author">HUTECH</a>
+                            </div>
+
+                            <!-- Template End: site/phongctsv/WrapFooter -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- //FOOTER -->
+                <div class="divBlockMXH">
+                    <a href="http://www.facebook.com/hutechuniversity/" class="zocial-facebook" target="_blank"><span></span></a>
+                    <a href="http://www.instagram.com/hutechuniversity/" class="zocial-instagram" taget="_blank"><span></span></a>
+                    <a href="http://hutechuni.blogspot.com/" class="zocial-blogger" target="_blank"><span></span></a>
+                    <a href="http://plus.google.com/u/3/+hutech" class="zocial-googleplus" target="_blank"><span></span></a>
+                    <a href="http://hutechuniversity.tumblr.com/" class="zocial-tumblr" target="_blank"><span></span></a>
+                    <a href="http://daihochutech.wordpress.com/" class="zocial-wordpress" target="_blank"><span></span></a>
+                    <a href="http://www.youtube.com/channel/UCOg9cfIS_KZidN4yP8M4wOQ" class="zocial-youtube" target="_blank"><span></span></a>
+                </div>
+
+                <div class="consultant-banner">
+                    <a href="http://tuyensinh.hutech.edu.vn/tuvantuyensinh/">
+                        <img src="//www.hutech.edu.vn/images/TU-VAN-TRUC-TUYEN.gif" alt="Banner Tư vấn trực tuyến">
+                    </a>
+                </div>
+            </div>
+
+            <div class="sb-slidebar sb-right">
+                <div id="wrap">
+                    <div class="timkiem">
+                        <input type="text" onfocus="if(this.value == 'Tìm kiếm') this.value = '';" onblur="if(this.value == '') this.value = 'Tìm kiếm';" value="Tìm kiếm" class="input_search" name="q" maxlength="80" id="qtukhoa2" style="width:75% !important;">
+                        <input type="submit" class="icon_menu_phone btn_search" value="" onclick="check_search_mobile()">
+                    </div>
+                    <ul class="menu" style="margin-top:0px;">
+                        <!-- Template Start: site/phongctsv/WrapMenu -->
+                        <li>
+                            <a href="https://www.hutech.edu.vn/phongctsv"><span class="menu-title">Trang chủ</span></a>
+                            <ul class=" hidden">
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv"><span class="menu-title">Trang Chủ PHÒNG</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/"><span class="menu-title">Trang Chủ HUTECH</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.hutech.edu.vn/phongctsv/gioi-thieu/chuc-nang-nhiem-vu"><span class="menu-title">Giới Thiệu</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="menu-title">Rèn luyện</span></a>
+                            <ul class=" hidden">
+                                <li>
+                                    <a href="http://tuyensinh.hutech.edu.vn/xemdiem/ctsv/DiemRenLuyen.aspx" target="_blank"><span class="menu-title">Kết quả Rèn luyện</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv/kt-qu-ren-luyn/quy-trinh-danh-gia-ren-luyen"><span class="menu-title">Quy trình đánh giá điểm rèn luyện</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span class="menu-title">Hoạt động</span></a>
+                            <ul class=" hidden">
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv/hoat-dong/sinh-hoat-cong-dan-svhs"><span class="menu-title">Sinh hoạt Công dân SVHS</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv/hoat-dong/hoat-dong-sinh-vien"><span class="menu-title">Hoạt động sinh viên</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv/hoat-dong/chuong-trinh-phat-thanh-hutech"><span class="menu-title">Chương trình phát thanh HUTECH</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span class="menu-title">Văn bản</span></a>
+                            <ul class=" hidden">
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv/van-ban/quy-ch"><span class="menu-title">Quy định, Quy Chế</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv/van-ban/thong-bao"><span class="menu-title">Thông báo</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv/van-ban/quyet-dinh"><span class="menu-title">Quyết định</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv/van-ban/bieu-mau"><span class="menu-title">Biểu mẫu</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span class="menu-title">Hỗ trợ HSSV</span></a>
+                            <ul class=" hidden">
+                                <li>
+                                    <a href="http://www.hutech.edu.vn/qhdn/"><span class="menu-title">Việc làm</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv/ho-tro-hssv/nha-tro"><span class="menu-title">Nhà trọ</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv/ho-tro-hssv/hoc-bong"><span class="menu-title">Học bổng</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv/ho-tro-hssv/ky-nang"><span class="menu-title">Kỹ năng</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv/ho-tro-hssv/y-te-hoc-duong"><span class="menu-title">Y tế học đường</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv/van-ban/che-do-chinh-sach"><span class="menu-title">Chế độ Chính sách</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.hutech.edu.vn/doinhom"><span class="menu-title">CLB - Đội - Nhóm</span></a>
+
+                        </li>
+                        <li>
+                            <a href="#"><span class="menu-title">Thi đua</span></a>
+                            <ul class=" hidden">
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv/thi-dua/sinh-vien-tieu-bieu"><span class="menu-title">Sinh viên tiêu biểu</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv/thi-dua/khen-thuong"><span class="menu-title">Khen thưởng</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv/thi-dua/ky-luat"><span class="menu-title">Kỷ luật</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="topmenu2">
+                            <a href="#"><span class="menu-title">Hình ảnh</span></a>
+                            <ul class=" hidden">
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv/hinh-anh/hoat-dong-ngoai-khoa"><span class="menu-title">Hoạt động ngoại khóa</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hutech.edu.vn/phongctsv/hinh-anh/hinh-anh-tot-nghiep"><span class="menu-title">Hình ảnh Tốt nghiệp</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="topmenu1">
+                            <a target="_blank" href="http://hutech.edu.vn/contact/"><span class="menu-title">Liên hệ</span></a>
+                        </li>
+
+                        <!-- Template End: site/phongctsv/WrapMenu -->
+                    </ul>
+                </div>
+            </div>
+
+            <script type="text/javascript" src="https://www.hutech.edu.vn/js/slidebars/slidebars.js"></script>
+            <script>
+                    (function($) {
+                        $(document).ready(function() {
+                        try{
+                            $.slidebars();
+                        } catch(e){}
+                        });
+                        }) (jQuery);
+            </script>
+
+
+
+            <!-- Google Pixel Code -->
+            <script type="text/javascript">
+                    /* <![CDATA[ */
+                    var google_conversion_id = 953389651;
+                    var google_custom_params = window.google_tag_params;
+                    var google_remarketing_only = true;
+                    /* ]]> */
+            </script>
+            <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+            </script><iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/953389651/?random=1501054304039&amp;cv=8&amp;fst=1501054304039&amp;num=1&amp;fmt=1&amp;guid=ON&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_his=3&amp;u_tz=420&amp;u_java=false&amp;u_nplug=4&amp;u_nmime=5&amp;frm=0&amp;url=https%3A%2F%2Fwww.hutech.edu.vn%2Fphongctsv&amp;ref=https%3A%2F%2Fwww.hutech.edu.vn%2F&amp;tiba=PH%C3%92NG%20C%C3%94NG%20T%C3%81C%20SINH%20VI%C3%8AN%20H%E1%BB%8CC%20SINH" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no"></iframe>
+            <noscript>
+                &lt;div style="display:inline;"&gt;
+                &lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/953389651/?value=0&amp;amp;guid=ON&amp;amp;script=0"/&gt;
+                &lt;/div&gt;
+            </noscript>
+            <!-- End Google Pixel Code -->
+            <!-- Google Tag Manager -->
+            <noscript>
+                &lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-NPQLMC"
+                height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;
+            </noscript>
+            <script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                    })(window,document,'script','dataLayer','GTM-NPQLMC');</script>
+            <!-- End Google Tag Manager -->
+
+
+
+
+
+
+            <div style="display: none; visibility: hidden;">
+                <script src="https://secure.adnxs.com/seg?add=4887312&amp;t=1" type="text/javascript"></script><iframe src="https://acdn.adnxs.com/ib/static/usersync/v3/async_usersync.html" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" style="position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0;"></iframe>
+            </div><div style="display: none; visibility: hidden;">
+                <script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","//connect.facebook.net/en_US/fbevents.js");fbq("init","662238160536354");fbq("track","PageView");</script>
+                <noscript></noscript>
+            </div><div style="display: none; visibility: hidden;">
+                <script type="text/javascript" src="//media1.admicro.vn/cpa/admicro.js"></script>
+                <script type="text/javascript">window.admicro_cpa_q=window.admicro_cpa_q||[];window.admicro_cpa_q.push({event:"retargeting",id:1113});</script>
+
+            </div>
+            <script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","375080202826501");fbq("track","PageView");</script>
+            <noscript>&lt;img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=375080202826501&amp;amp;ev=PageView&amp;amp;noscript=1"&gt;</noscript>
+
+            <iframe src="//lg1.logging.admicro.vn/_tracking1.gif?dg=fd8cfb7e0caa7ac96fd2f8844d553fa1&amp;fl=-1.-1.&amp;je=0&amp;sr=1366x768&amp;sc=24&amp;hn=hutech.edu.vn&amp;p=%2Fphongctsv&amp;r=https%3A%2F%2Fwww.hutech.edu.vn%2F&amp;cat=&amp;g=0&amp;i=s%3B1501054305197%3B0%3B0%3B1%3B0%3B0%3B1366x638%3B0%3B0%3Bcb53680b9c255201a2c02b44a5cf1a08%3Bfd8cfb7e0caa7ac96fd2f8844d553fa1&amp;rdm=0.07693426276586157&amp;ce=1&amp;lc=5&amp;cr=1501054306&amp;ui=8910543061907188219" name="admIframeTracking" id="admIframeTracking" style="width: 12px; height: 12px; visibility: hidden; position: absolute; left: 0px; bottom: 0px; border: none;"></iframe>
+        </body>
+    </html>
+</div>
+
+@RenderSection("scripts", required: false)
+</body>
+</html>
